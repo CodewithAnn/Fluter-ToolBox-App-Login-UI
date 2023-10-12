@@ -70,10 +70,10 @@ flutter:
         - asset: fonts/Rubik-Regular.ttf
         - asset: fonts/Rubik-Medium.ttf
         - asset: fonts/Rubik-Black.ttf
-  #         style: italic
-        - family: Pacifico
-          fonts:
-            - asset: fonts/Pacifico.ttf
+
+    - family: Pacifico
+      fonts:
+        - asset: fonts/Pacifico-Regular.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
