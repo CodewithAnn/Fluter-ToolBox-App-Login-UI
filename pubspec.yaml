@@ -65,12 +65,15 @@ flutter:
 
   
   fonts:
-    - family: Rubik
+    - family: Rubik Regular
       fonts:
         - asset: fonts/Rubik-Regular.ttf
-        - asset: fonts/Rubik-Medium.ttf
+    - family: Rubik Medium
+      fonts:
+        - asset: fonts/Rubik-Medium.ttf   
+    - family: Rubik Black
+      fonts:    
         - asset: fonts/Rubik-Black.ttf
-
     - family: Pacifico
       fonts:
         - asset: fonts/Pacifico-Regular.ttf
