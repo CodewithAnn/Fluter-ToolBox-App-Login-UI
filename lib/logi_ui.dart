@@ -5,15 +5,15 @@ class ToolBoxLogin extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -48,10 +48,10 @@ class ToolBoxLogin extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
-            Center(
+            const Center(
               child: Text(
                 'Log in',
                 style: TextStyle(
@@ -61,10 +61,10 @@ class ToolBoxLogin extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Center(
+            const Center(
               child: Text(
                 textAlign: TextAlign.center,
                 'App without visitors, \nis like a ship lost in the horizon ',
@@ -75,6 +75,49 @@ class ToolBoxLogin extends StatelessWidget {
                 ),
               ),
             ),
+            Container(
+              alignment: Alignment.center,
+              height: 40,
+              width: 220,
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(244, 249, 113, 59),
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: const Text(
+                'Login',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'Rubik Regular',
+                  fontSize: 20,
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 8,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  "'Don't have an account?",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontFamily: 'Rubik regular',
+                    fontSize: 13,
+                  ),
+                ),
+                TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      'Sing Up',
+                      style: TextStyle(
+                        color: Color.fromARGB(244, 249, 113, 59),
+                        fontFamily: 'Rubik Regular',
+                        fontSize: 13,
+                      ),
+                    ))
+              ],
+            )
           ],
         ),
       ),
