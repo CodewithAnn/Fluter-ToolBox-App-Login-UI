@@ -75,48 +75,107 @@ class ToolBoxLogin extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              alignment: Alignment.center,
-              height: 40,
-              width: 220,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(244, 249, 113, 59),
-                borderRadius: BorderRadius.circular(15),
+            // const SizedBox(
+            //   height: 20,
+            // ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 35),
+              child: TextFormField(
+                decoration: InputDecoration(
+                    hintText: 'email',
+                    filled: true,
+                    fillColor: const Color(0xffF8F9FA),
+                    prefixIcon: const Icon(Icons.email_rounded),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      borderSide: const BorderSide(
+                        color: Color(0xffE4E7EB),
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      borderSide: const BorderSide(
+                        color: Color(0xffE4E7EB),
+                      ),
+                    )),
               ),
-              child: const Text(
-                'Login',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: 'Rubik Regular',
-                  fontSize: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 35),
+              child: TextFormField(
+                decoration: InputDecoration(
+                    hintText: 'password',
+                    filled: true,
+                    fillColor: const Color(0xffF8F9FA),
+                    prefixIcon: const Icon(Icons.password_rounded),
+                    // suffixIcon:const Icon(Icons.hide) ,
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      borderSide: const BorderSide(
+                        color: Color(0xffE4E7EB),
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      borderSide: const BorderSide(
+                        color: Color(0xffE4E7EB),
+                      ),
+                    )),
+              ),
+            ),
+            // const SizedBox(
+            //   height: 70,
+            // ),
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 24,
+              ),
+              child: Container(
+                alignment: Alignment.center,
+                height: 40,
+                width: 220,
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(244, 249, 113, 59),
+                  borderRadius: BorderRadius.circular(15),
                 ),
-              ),
-            ),
-            const SizedBox(
-              height: 8,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
-                  "'Don't have an account?",
+                child: const Text(
+                  'Login',
                   style: TextStyle(
-                    color: Colors.black,
-                    fontFamily: 'Rubik regular',
-                    fontSize: 13,
+                    color: Colors.white,
+                    fontFamily: 'Rubik Regular',
+                    fontSize: 20,
                   ),
                 ),
-                TextButton(
-                    onPressed: () {},
-                    child: const Text(
-                      'Sing Up',
-                      style: TextStyle(
-                        color: Color.fromARGB(244, 249, 113, 59),
-                        fontFamily: 'Rubik Regular',
-                        fontSize: 13,
-                      ),
-                    ))
-              ],
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 0,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text(
+                    "'Don't have an account?",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontFamily: 'Rubik regular',
+                      fontSize: 13,
+                    ),
+                  ),
+                  TextButton(
+                      onPressed: () {},
+                      child: const Text(
+                        'Sing Up',
+                        style: TextStyle(
+                          color: Color.fromARGB(244, 249, 113, 59),
+                          fontFamily: 'Rubik Regular',
+                          fontSize: 13,
+                        ),
+                      ))
+                ],
+              ),
             )
           ],
         ),
