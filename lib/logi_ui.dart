@@ -81,6 +81,7 @@ class ToolBoxLogin extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 35),
               child: TextFormField(
+                style: const TextStyle(fontFamily: 'Pacifico'),
                 decoration: InputDecoration(
                     hintText: 'email',
                     filled: true,
@@ -103,6 +104,7 @@ class ToolBoxLogin extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 35),
               child: TextFormField(
+                style: const TextStyle(fontFamily: 'Pacifico'),
                 decoration: InputDecoration(
                     hintText: 'password',
                     filled: true,
